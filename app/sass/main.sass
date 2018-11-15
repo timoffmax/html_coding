@@ -46,10 +46,33 @@ body
   font-family: $default-font
   overflow-x: hidden
   min-height: 700px
+  opacity: 1
 
   & .site-header
     background-image: url('../img/top-bg.jpg')
     min-height: 700px
+    height: 100vh
+    background-color: $dark
+
+    .top-bar
+      padding-top: 40px
+      position: absolute
+      width: 100%
+      z-index: 1
+
+      .logo
+        img
+          width: 125px
+          height: auto
+          margin-left: 45px
+
+  section, header
+    position: relative
+    background-size: cover
+    background-position: center
+
+  section
+    background-color: #fff
 
 .img-responsive
   display: block
