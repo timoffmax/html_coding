@@ -38,6 +38,14 @@ body textarea:required:valid
 html, body
   height: 100%
 
+section, header
+  position: relative
+  background-size: cover
+  background-position: center
+
+section
+  background-color: #fff
+
 body
   font-size: 16px
   min-width: 320px
@@ -48,6 +56,14 @@ body
   min-height: 700px
   opacity: 1
 
+  // Menu navbar
+  .mm-panel.mm-panel_has-navbar
+    padding-top: 0
+
+  #my-menu:not(.mm-menu)
+    display: none
+
+  // Header
   & .site-header
     background-image: url('../img/top-bg.jpg')
     min-height: 700px
@@ -80,11 +96,7 @@ body
           margin-right: 5px
           font-size: 22px
 
-
-      // Menu
-      #my-menu:not(.mm-menu)
-        display: none
-
+      // Menu icon
       .hamburger
         position: absolute
         right: 0
@@ -100,15 +112,16 @@ body
             height: 2px
 
 
-
-
-  section, header
+  .mm-navbar
+    height: auto
     position: relative
-    background-size: cover
-    background-position: center
 
-  section
-    background-color: #fff
+    .mm-navbar__title
+      padding: 0
+      img
+        width: 128px
+        margin: 10px
+        padding-bottom: 15px
 
 .img-responsive
   display: block
