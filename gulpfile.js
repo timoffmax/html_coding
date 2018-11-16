@@ -124,7 +124,12 @@ gulp.task('rsync', function() {
 	}));
 });
 
+gulp.task('fontawesome', function() {
+    return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*')
+        .pipe(gulp.dest('app/fonts/fontawesome'));
+});
+
 gulp.task('removedist', function() { return del.sync('dist'); });
 gulp.task('clearcache', function () { return cache.clearAll(); });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['watch', 'fontawesome']);

@@ -1,6 +1,11 @@
 @import "fonts"
 @import "libs"
 @import "vars"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims"
 
 *
   -webkit-box-sizing: border-box
@@ -53,6 +58,7 @@ body
     min-height: 700px
     height: 100vh
     background-color: $dark
+    color: #fff
 
     .top-bar
       padding-top: 40px
@@ -65,6 +71,21 @@ body
           width: 125px
           height: auto
           margin-left: 45px
+
+      .phone
+        position: absolute
+        right: 85px
+        top: 45px
+        font-family: firasans, sans-serif
+        font-size: 22px
+        white-space: nowrap
+
+        .fas
+          color: #555
+          margin-right: 3px
+
+
+
 
   section, header
     position: relative
