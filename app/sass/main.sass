@@ -1,11 +1,6 @@
 @import "fonts"
-@import "libs"
 @import "vars"
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome"
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands"
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular"
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid"
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims"
+@import "libs"
 
 *
   -webkit-box-sizing: border-box
@@ -82,7 +77,27 @@ body
 
         .fas
           color: #555
-          margin-right: 3px
+          margin-right: 5px
+          font-size: 22px
+
+
+      // Menu
+      #my-menu:not(.mm-menu)
+        display: none
+
+      .hamburger
+        position: absolute
+        right: 0
+        top: 35px
+
+        .hamburger-box
+          width: 35px
+
+          .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+            width: 35px
+            background-color: #fff
+            border-radius: 0
+            height: 2px
 
 
 
