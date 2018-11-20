@@ -5,7 +5,7 @@ $(function() {
 
     // Settings
     $('#my-menu').mmenu({
-        extensions: ['widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black', 'position-right', 'off-canvas'],
+        extensions: ['theme-black', 'effect-menu-slide', 'pagedim-black', 'position-right', 'off-canvas'],
         navbar: {
             title: '<img src="img/logo-1.svg" alt="Logo">',
         },
